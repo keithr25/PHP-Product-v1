@@ -1,0 +1,638 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/footer.php",
+			"settings":
+			{
+				"buffer_size": 165,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>Header</title>\n</head>\n<body>\n\n	<header>\n\n		<p>Business Site</p>\n\n			<li><a href=\"/index.php\">Home</a></li>\n			<li> | </li>\n			<li><a href=\"/contact.php\">Contact</a></li>\n			<li> | </li>\n			<li><a href=\"/browse.php\">Browse</a></li>\n			<li> | </li>\n			<li><a href=\"/products.php\">Products</a></li>\n		</ul>\n\n	</header>\n</body>\n</html>",
+			"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/header.php",
+			"file_size": 411,
+			"file_write_time": 130872577170000000,
+			"settings":
+			{
+				"buffer_size": 404,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\n\n\n\n?>\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<link rel=\"stylesheet\" href=\"/css/styles.css\">\n	<title>Home</title>\n</head>\n<body>\n\n	<?php include 'header.php'; ?>\n\n	<h1>Welcome to our shopping cart!</h1>\n\n	<p>Do you want to see a list of our <a href='/products.php'>products</a>?</p>\n\n	<?php include 'footer.php'; ?>\n\n	\n\n</body>\n</html>",
+			"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/index.php",
+			"file_size": 373,
+			"file_write_time": 130872568480000000,
+			"settings":
+			{
+				"buffer_size": 371,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\n\n\n\n?>\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<link rel=\"stylesheet\" href=\"/css/styles.css\">\n	<title>Contact</title>\n</head>\n<body>\n\n		\n	<?php include 'header.php'; ?>\n	<h1>Contact</h1>\n\n	<ol>\n		<li><h2>Iamm Owner</h2></li>\n		<li>Phone: (555)555-5555</li>\n		<li>Follow us on <a href=\"#\">Facebook</a></li>\n	</ol>\n\n	<?php include 'footer.php'; ?>\n\n\n</body>\n</html>",
+			"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/contact.php",
+			"file_size": 464,
+			"file_write_time": 130872584210000000,
+			"settings":
+			{
+				"buffer_size": 398,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\n\n\n\n?>\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<link rel=\"stylesheet\" href=\"/css/styles.css\">\n	<title>Browse</title>\n</head>\n<body>\n\n		\n	<?php include 'header.php'; ?>\n\n	<h1>Browse Products</h1>\n\n	<ul class=\"browse-nav\">\n		<li><a href=\"products.php?Ubuntu=2\">Ubuntu</a></li>\n		<li><a href=\"products.php?Windows=3\">Windows</a></li>\n	</ul>\n\n	<?php include 'footer.php'; ?>\n\n\n</body>\n</html>",
+			"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/browse.php",
+			"file_size": 475,
+			"file_write_time": 130872783360000000,
+			"settings":
+			{
+				"buffer_size": 423,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\n\n\n\n?>\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<link rel=\"stylesheet\" href=\"/css/styles.css\">\n	<title>Products</title>\n</head>\n<body>\n\n		\n	<?php include 'header.php'; ?>\n\n	<h1>Products</h1>\n\n		<?php \n\n			if ($_GET['Mac']) {\n				echo '<h2>You chose MacBook</h2>';\n					} else {\n						echo '<h2>You chose Windows</h2>';\n				}\n\n		?>\n\n		<?php include 'footer.php'; ?>\n\n\n</body>\n</html>",
+			"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/products.php",
+			"file_size": 567,
+			"file_write_time": 130872783850000000,
+			"settings":
+			{
+				"buffer_size": 416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "body {\n	background-image: url('../images/dimension_@2X.png');\n}\n\nheader {\n	background-color: #FFF;\n	border-top: 1px solid #000;\n	border-bottom: 1px solid #000;\n}\n\nheader p {\n	margin-bottom: 0;\n	margin-left: 10px;\n}\n\nheader ul {\n	background-color: #000;\n	margin :0 10px 10px 10px;\n	padding: 0;\n}\n\nheader ul li {\n	display: inline;\n	color: #FFF;\n	\n}\n\nheader li a {\n	color: #FFF;\n	font-size: 1em;\n}\n\nol a {\n	color: #000;\n	font-weight: bold;\n}\n\nul.browse-nav {\n	list-style-type: none;\n	margin: 0;\n}\n\nfooter {\n	background-color: #FFF;\n	border-top: 1px solid #000;\n	border-bottom: 1px solid #000;\n}\n\nfooter > p {\n	margin-left: 5px;\n}\n\n",
+			"file": "styles.css",
+			"file_size": 660,
+			"file_write_time": 130872591790000000,
+			"settings":
+			{
+				"buffer_size": 628,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>Document</title>\n</head>\n<body>\n	\n	<ul>\n		<li><a href=\"food.php?hungry=1&lazy=1\">Hungry and Lazy</a></li>\n		<li><a href=\"food.php?hungry=1&lazy=0\">Hungry and Not Lazy</a></li>\n		<li><a href=\"food.php?hungry=0&lazy=0\">Not Hungry and Not Lazy</a></li>\n	</ul>\n\n\n</body>\n</html>",
+			"file": "/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/php/Basic Logic/index.html",
+			"file_size": 346,
+			"file_write_time": 130870935190000000,
+			"settings":
+			{
+				"buffer_size": 330,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\n\n$hungry = $_GET['hungry'];\n$lazy = $_GET['lazy'];\n\n\n\n\n\n\n\n\n\n// $hungry = true;\n// $lazy = false;\n\n// if ($hungry) {\n	\n// 	if ($lazy) {\n// 		echo 'eat cereal';\n// 	} else {\n// 		echo 'eat eggs and bacon';\n// 	} \n// }\n\n// else {\n// 	echo 'eat nothing';\n// }",
+			"file": "/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/php/Basic Logic/food.php",
+			"file_size": 388,
+			"file_write_time": 130870937110000000,
+			"settings":
+			{
+				"buffer_size": 262,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n// $x = 1;\n\n// if ($x >= 4) {\n// 	echo 'greater of equal to four';\n// }	else if ($x < 1) {\n// 	echo 'less than 1';\n// }	else {\n// 	echo 'It is none of the above';\n// }\n\n$feeling = 'Sweet tooth';\n\nif ($feeling === 'veegan') {\n	echo 'Eat Salad.';\n} else if ($feeling === 'carnivorus') {\n	echo 'Eat Hamburger.';\n} else {\n	echo 'Eat ice cream.';\n}",
+			"file": "/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/php/Basic Logic/ifElse.php",
+			"file_size": 350,
+			"file_write_time": 130870897180000000,
+			"settings":
+			{
+				"buffer_size": 344,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '5b468e895e861582c8ac080daaae7722' + 'a0787a887fb19723f006ed5b020ffdf6'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/php/Basic Logic/ifElse.php",
+		"/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/php/Basic Logic/nestedIfs.php",
+		"/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/php/Basic Logic/food.php",
+		"/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/css/styles.css",
+		"/Users/keithr/Desktop/Project1/Milestone1/index.html",
+		"/System/Library/Frameworks/SceneKit.framework/Versions/A/Headers/SCNCamera.h",
+		"/Users/keithr/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/CSS/Defaults/index.html",
+		"/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/CSS/Defaults/styles.css",
+		"/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/CSS/CSSnotes.txt",
+		"/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/CSS/Basic Properties/index.html",
+		"/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/CSS/Basic Properties/styles.css",
+		"/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/CSS/Basic Properties/jweary.jpeg",
+		"/Users/keithr/Rockit/Lesson Notes/Milestone 1/php/Strings/index.php",
+		"/Users/keithr/Rockit/Lesson Notes/Milestone 1/CSS/Thursday LessonNotes",
+		"/Users/keithr/Rockit/Lesson Notes/Milestone 1/php/php.txt",
+		"/Users/keithr/Rockit/Lesson Notes/Milestone 1/php/phpPractice.php",
+		"/Users/keithr/Rockit/Lesson Notes/Milestone 1/php/Strings/string.php",
+		"/Users/keithr/Rockit/Lesson Notes/Milestone 1/CSS/index.html",
+		"/Users/keithr/Rockit/Lesson Notes/Milestone 1/php/Thursday notes",
+		"/Users/keithr/Documents/cssLessons",
+		"/Users/keithr/Library/Application Support/Sublime Text 3/Packages/AdvancedNewFile/AdvancedNewFile.sublime-settings",
+		"/Users/keithr/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/keithr/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/keithr/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/keithr/Rockit/Lesson Notes/Milestone 1/Sublime/Sublime Demo.sublime-project",
+		"/Users/keithr/Rockit/Lesson Notes/Milestone 1/Sublime/Sumblime Commands.txt",
+		"/Users/keithr/.Trash/Sublime Demo.sublime-workspace",
+		"/Users/keithr/Rockit/Lesson Notes/Lesson Notes.sublime-project",
+		"/Users/keithr/Rockit/Lesson Notes/Milestone 1/Terminal Commands",
+		"/Users/keithr/Rockit/Lesson Notes/index.js",
+		"/Users/keithr/Rockit/Lesson Notes/index.html",
+		"/Users/keithr/Rockit/Lesson Notes/index.php",
+		"/Users/keithr/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"></"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 9,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 381.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/contact.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								260,
+								260
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 387.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/browse.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								256,
+								256
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 477.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/keithr/Desktop/Projects/Milestone1/PHPproductV1/products.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								298,
+								298
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 471.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/php/Basic Logic/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 121.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/php/Basic Logic/food.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 82.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/keithr/Desktop/Lessons/Rockit/Lesson Notes/Milestone 1/php/Basic Logic/ifElse.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "PHPproductV1.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/PHPprojectModule1.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
